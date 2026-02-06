@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>SANTA HEREJIA — Tu estilo no pide permiso</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:Montserrat, sans-serif;
+  background:#0b0b0b;
+  color:white;
+}
+
+/* HEADER */
+header{
+  background:black;
+  padding:14px 20px;
+  display:flex;
+  align-items:center;
+  gap:20px;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  border-bottom:2px solid #1a1a1a;
+}
+
+.logo{
+  font-weight:800;
+  font-size:22px;
+}
+.logo span{color:#e10600}
+
+.search{
+  flex:1;
+}
+.search input{
+  width:100%;
+  padding:10px;
+  border-radius:6px;
+  border:none;
+  background:#1a1a1a;
+  color:white;
+}
+
+.cart{
+  font-size:22px;
+  cursor:pointer;
+}
+
+/* MENU */
+.menu{
+  display:flex;
+  gap:18px;
+  padding:12px 20px;
+  background:#111;
+  font-size:14px;
+  overflow:auto;
+}
+.menu a{
+  color:white;
+  text-decoration:none;
+  white-space:nowrap;
+}
+
+/* HERO */
+.hero{
+  background:linear-gradient(120deg,#000,#220000);
+  padding:60px 20px;
+  text-align:center;
+}
+.hero h1{
+  font-size:36px;
+}
+.hero p{
+  margin-top:10px;
+  color:#ccc;
+}
+.cta{
+  margin-top:25px;
+  background:#e10600;
+  padding:14px 22px;
+  border-radius:8px;
+  display:inline-block;
+  font-weight:700;
+  cursor:pointer;
+}
+
+/* GRID */
+.section{
+  padding:40px 20px;
+}
+.section h2{
+  margin-bottom:20px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:18px;
+}
+
+.card{
+  background:#141414;
+  border-radius:10px;
+  overflow:hidden;
+  transition:.25s;
+}
+.card:hover{
+  transform:translateY(-4px);
+}
+.card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+.card .info{
+  padding:12px;
+}
+.price{
+  color:#e10600;
+  font-weight:700;
+}
+
+/* SUSCRIPCION */
+.subscribe{
+  background:#111;
+  padding:40px 20px;
+  text-align:center;
+}
+.subscribe input{
+  padding:12px;
+  width:260px;
+  border:none;
+  border-radius:6px;
+  margin-right:8px;
+}
+
+/* FOOTER */
+footer{
+  background:black;
+  padding:30px 20px;
+  text-align:center;
+  color:#777;
+  font-size:14px;
+}
+
+/* CHAT FLOAT */
+.chat{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#e10600;
+  width:56px;
+  height:56px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:24px;
+  cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">SANTA <span>HEREJIA</span></div>
+  <div class="search">
+    <input placeholder="Buscar prendas...">
+  </div>
+  <div class="cart">🛒</div>
+</header>
+
+<nav class="menu">
+  <a>Parte de Arriba</a>
+  <a>Parte de Abajo</a>
+  <a>Vestidos</a>
+  <a>Calzado</a>
+  <a>Fragancias</a>
+  <a style="color:#e10600;font-weight:700;">💸 Ganá probando prendas</a>
+</nav>
+
+<section class="hero">
+  <h1>SANTA HEREJIA</h1>
+  <p>Tu estilo no pide permiso</p>
+  <div class="cta">Ver colección</div>
+</section>
+
+<section class="section">
+  <h2>Destacados</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38">
+      <div class="info">
+        Remera Urban
+        <div class="price">$18.500</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246">
+      <div class="info">
+        Top Street
+        <div class="price">$16.200</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f">
+      <div class="info">
+        Jogger Fit
+        <div class="price">$29.900</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="subscribe">
+  <h2>Novedades y ofertas</h2>
+  <p>Suscribite para recibir lanzamientos</p>
+  <br>
+  <input placeholder="Tu email">
+  <button class="cta">Suscribirme</button>
+</section>
+
+<footer>
+SANTA HEREJIA — Moda urbana accesible  
+<br><br>
+© 2026
+</footer>
+
+<div class="chat">💬</div>
+
+</body>
+</html>
