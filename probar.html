@@ -48,4 +48,97 @@ button{
   padding:14px;
   border-radius:10px;
   font-size:16px;
-  curso
+  cursor:pointer;
+}
+
+.note{
+  background:#111;
+  padding:15px;
+  border-radius:10px;
+  margin-top:20px;
+  line-height:1.5;
+}
+
+a{ color:#e10600; text-decoration:none; }
+
+.small{
+  font-size:13px;
+  opacity:.85;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>💰 Ganá probando prendas</h1>
+<p><a href="index.html">← Volver al inicio</a></p>
+</header>
+
+<main>
+
+<h2>Programa de modelos SANTA HEREJIA</h2>
+
+<p>
+Seleccionamos chicas para probar nuestras prendas y generar ingresos.
+Recibís ropa sin costo, realizás las sesiones y cobrás por trabajo realizado.
+</p>
+
+<div class="note">
+✔ Fotos privadas<br>
+✔ Acceso solo administrador<br>
+✔ Verificación automática por sistema IA<br>
+✔ Protección de rostro automática<br>
+✔ Archivos confidenciales<br>
+✔ Sin historial público visible
+</div>
+
+<h2>Formulario de inscripción</h2>
+
+<form action="https://formspree.io/f/meeleryn" method="POST" enctype="multipart/form-data">
+
+<input name="nombre" placeholder="Nombre completo" required>
+
+<input name="edad" placeholder="Edad" required>
+
+<input name="ciudad" placeholder="Ciudad" required>
+
+<input name="email" type="email" placeholder="Email de contacto" required>
+
+<input name="instagram" placeholder="Instagram (opcional)">
+
+<select name="talle_superior">
+<option value="">Talle parte de arriba</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+<option>XL</option>
+<option>XXL</option>
+</select>
+
+<select name="talle_inferior">
+<option value="">Talle parte de abajo</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+<option>XL</option>
+<option>XXL</option>
+</select>
+
+<textarea name="mensaje" placeholder="Contanos por qué querés participar"></textarea>
+
+<label>Fotos con prendas propias</label>
+<input type="file" name="fotos" multiple>
+
+<p class="small">
+Al enviar aceptás revisión automática y contacto posterior del equipo.
+</p>
+
+<button type="submit">Enviar postulación</button>
+
+</form>
+
+</main>
+
+</body>
+</html>
