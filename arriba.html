@@ -2,27 +2,58 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Parte de Arriba — SANTA HEREJIA</title>
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<title>SANTA HEREJIA — Parte de Arriba</title>
+
 <style>
-body{font-family:Montserrat;background:#0b0b0b;color:white;padding:30px}
-h1 span{color:#e10600}
-.card{background:#141414;padding:16px;border-radius:10px;margin-bottom:16px}
-a{color:#e10600;text-decoration:none}
+body{
+  margin:0;
+  font-family:Arial;
+  background:#000;
+  color:white;
+}
+
+header{
+  background:#8b0000;
+  padding:30px;
+  text-align:center;
+}
+
+a{
+  color:#e10600;
+  text-decoration:none;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  padding:30px;
+}
+
+.card{
+  background:#111;
+  border-radius:12px;
+  padding:15px;
+  text-align:center;
+}
+
+.card img{
+  width:100%;
+  border-radius:10px;
+}
 </style>
 </head>
+
 <body>
 
-<h1>Parte de <span>Arriba</span></h1>
+<header>
+<h1>Parte de Arriba</h1>
+<p><a href="index.html">← Volver al inicio</a></p>
+</header>
 
-<div class="card">Remeras</div>
-<div class="card">Tops</div>
-<div class="card">Blusas</div>
-<div class="card">Buzos</div>
-
-<br><br>
-<a href="/">← Volver al inicio</a>
+<div class="grid">
+<!-- productos -->
+</div>
 
 </body>
 </html>
