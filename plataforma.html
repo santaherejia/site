@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -24,12 +24,21 @@ main{
   padding:30px;
 }
 
+h2{
+  color:#e10600;
+}
+
 input, textarea{
   padding:12px;
   border-radius:8px;
   border:none;
   margin-top:10px;
   width:100%;
+  font-size:15px;
+}
+
+textarea{
+  min-height:100px;
 }
 
 button{
@@ -41,6 +50,7 @@ button{
   font-size:16px;
   cursor:pointer;
   margin-top:15px;
+  width:100%;
 }
 
 button:hover{
@@ -49,13 +59,19 @@ button:hover{
 
 .box{
   background:#111;
-  padding:20px;
+  padding:25px;
   border-radius:12px;
   margin-top:25px;
 }
 
 .hidden{
   display:none;
+}
+
+.info{
+  font-size:14px;
+  opacity:0.8;
+  margin-top:10px;
 }
 </style>
 
@@ -81,6 +97,8 @@ function checkPassword(){
 
 <main>
 
+<!-- LOGIN -->
+
 <div id="login" class="box">
 <h2>Acceso exclusivo</h2>
 <p>Ingresá la contraseña que te enviamos por mail.</p>
@@ -88,22 +106,33 @@ function checkPassword(){
 <button onclick="checkPassword()">Ingresar</button>
 </div>
 
+<!-- CONTENIDO PRIVADO -->
+
 <div id="contenido" class="hidden">
 
-<h2>Subida de material</h2>
+<div class="box">
+<h2>Subida de material del pack</h2>
+<p>Subí tus fotos a Google Drive o WeTransfer y pegá el link abajo.</p>
 
-<form action="https://formspree.io/f/meeleryn" method="POST" enctype="multipart/form-data">
+<form action="https://formspree.io/f/meeleryn" method="POST">
 
 <input name="nombre" placeholder="Tu nombre completo" required>
 
-<textarea name="detalle" placeholder="Pack recibido / detalles"></textarea>
+<input name="pack" placeholder="Número o nombre del pack recibido" required>
 
-<label>Subir fotos (frente, perfil y espalda)</label>
-<input type="file" name="fotos" multiple required>
+<textarea name="detalle" placeholder="Comentarios sobre el calce, tela, observaciones..."></textarea>
+
+<textarea name="link_fotos" placeholder="Pegá acá el link de Drive o WeTransfer con las fotos (frente, perfil y espalda)" required></textarea>
 
 <button type="submit">Enviar material</button>
 
 </form>
+
+<p class="info">
+⚠️ Asegurate de que el link esté configurado como “Cualquiera con el enlace puede ver”.
+</p>
+
+</div>
 
 </div>
 
